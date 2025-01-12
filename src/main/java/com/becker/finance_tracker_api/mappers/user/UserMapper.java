@@ -22,8 +22,6 @@ public interface UserMapper {
     @Mapping(source = "email", target = "email")
     @Mapping(source = "phoneNumber", target = "phoneNumber")
     @Mapping(source = "password", target = "password")
-    @Mapping(source = "createdAt", target = "createdAt")
-    @Mapping(source = "updatedAt", target = "updatedAt")
     User toUser(UserRequestDTO requestDTO);
 
 }
